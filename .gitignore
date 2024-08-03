@@ -1,0 +1,83 @@
+# Terraform files
+*.tfstate
+*.terraform
+*.terraformrc
+terraform.tfstate
+terraform.tfstate.backup
+
+# HashiCorp configuration files
+.hclhist
+
+# Docker and container-related files
+*.dockerignore
+*.dockerfile
+docker-compose.yml
+
+# Kubernetes configuration files
+*.yaml
+*.yml
+
+# AWS configuration files
+*.awsconfig
+*.awscredentials
+
+# Azure configuration files
+*.azureconfig
+*.azurecredentials
+
+# Google Cloud configuration files
+*.gcloudconfig
+*.gcloudcredentials
+
+# Other configuration files
+*.config
+*.ini
+*.json
+/assets
+
+
+# Node.js and npm files
+node_modules/
+package-lock.json
+package.json
+
+# Go files
+go.mod
+go.sum
+
+# Python files
+*.pyc
+__pycache__/
+
+# Java files
+*.class
+*.jar
+*.pom
+*.xml
+
+# C# files
+*.csproj
+*.sln
+*.dll
+*.exe
+
+# Visual Studio files
+*.suo
+*.user
+*.vspscc
+*.vssscc
+
+# IntelliJ IDEA files
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Eclipse files
+*.project
+*.pydevproject
+*.settings/
+
+# Other files
+.DS_Store
+Thumbs.db
