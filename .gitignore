@@ -1,83 +1,79 @@
-# Terraform files
+# Terraform
 *.tfstate
-*.terraform
-*.terraformrc
+*.tfstate.*
+.crash
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
 
-# HashiCorp configuration files
-.hclhist
+# LocalStack
+.localstack/
+.localstack_artifacts/
 
-# Docker and container-related files
-*.dockerignore
-*.dockerfile
-docker-compose.yml
-
-# Kubernetes configuration files
-*.yaml
-*.yml
-
-# AWS configuration files
-*.awsconfig
-*.awscredentials
-
-# Azure configuration files
-*.azureconfig
-*.azurecredentials
-
-# Google Cloud configuration files
-*.gcloudconfig
-*.gcloudcredentials
-
-# Other configuration files
-*.config
-*.ini
-*.json
-/assets
-
-
-# Node.js and npm files
-node_modules/
-package-lock.json
-package.json
-
-# Go files
-go.mod
-go.sum
-
-# Python files
-*.pyc
+# AWS Lambda
+# Ignore Python dependencies for AWS Lambda functions
+*.zip
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.whl
 
-# Java files
+# AWS CLI
+.aws/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+Pipfile.lock
+poetry.lock
+mypy_cache/
+.dmypy.json
+.venv/
+.pytest_cache/
+
+# Java
 *.class
 *.jar
-*.pom
-*.xml
-
-# C# files
-*.csproj
-*.sln
-*.dll
-*.exe
-
-# Visual Studio files
-*.suo
-*.user
-*.vspscc
-*.vssscc
-
-# IntelliJ IDEA files
+*.war
+*.ear
 *.iml
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+build/
+
+# IntelliJ IDEA
 .idea/
-*.ipr
+*.iml
 *.iws
+out/
 
-# Eclipse files
-*.project
-*.pydevproject
-*.settings/
+# VS Code
+.vscode/
+*.code-workspace
 
-# Other files
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
