@@ -3,15 +3,21 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.0"
+      version = "~> 5.0" # até 5.99
+    }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "3.6.2"
     }
   }
 }
 
 provider "aws" {
-  region     = "us-east-1"
-  access_key = "maril-zz"
-  secret_key = "strings-zz"
+  profile    = local.localstack_profile
+  region     = var.aws_region
+  access_key = local.localstack_access
+  secret_key = local.localstack_secret
 
   s3_use_path_style           = true
   skip_credentials_validation = true
