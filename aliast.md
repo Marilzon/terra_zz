@@ -1,1 +1,0 @@
-alias aws-l='aws --endpoint http://localhost:4566 --profile localstack'
